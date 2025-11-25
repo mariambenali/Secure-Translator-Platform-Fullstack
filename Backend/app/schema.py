@@ -13,10 +13,18 @@ class UserResponse(BaseModel):
     email: str
 
     class Config:
-        orm_mode= True
+        model_config = {
+            "from_attributes": True
+            }
 
 
 class Login(BaseModel):
     username: str
-    email: str
+    password: str
+
+
+class Translate(BaseModel):
+    text : str
+    source: str
+    target: str
 
