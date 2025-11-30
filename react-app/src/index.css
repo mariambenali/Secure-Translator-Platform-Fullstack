@@ -1,0 +1,204 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+
+body {
+  margin: 0;
+  display: flex;
+  place-content: center;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+.title{
+  place-content: center;
+  place-items: center;
+  margin-top: 30px;
+}
+
+.main {
+  
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  place-items: center;
+  place-content: center;
+}
+
+div.card{
+  background-color: rgb(3, 3, 10);
+  width: 500px;
+  height: 500px;
+  place-items: center;
+  place-content: center;
+  opacity: 0.9; 
+  border-radius: 12px;
+  border: 3px  rgb(109, 109, 224);
+  animation:glow 3s infinite alternate
+}
+@keyframes glow {
+  from {
+    box-shadow: 0 0 30px rgba(rgb(51, 0, 255), rgb(135, 7, 103), rgb(112, 101, 210), alpha);
+  }
+  to {
+    box-shadow: 0 0 60px rgba(109, 109, 224, 1);
+}
+}
+.content{
+  
+  display:flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 250px;
+  height: 250px;
+}
+
+button.button-left{
+  background-color: rgb(50, 54, 84);
+  margin-right:10px;
+  width: 120px;
+  padding: 9px;
+  border-radius: 8px;
+  border: none;
+}
+
+button.button-left:hover{
+  background-color: rgb(102, 111, 182);
+}
+button.button-right{
+  background-color: rgb(50, 54, 84);
+  margin-right:10px;
+  width: 120px;
+  padding: 9px;
+  border-radius: 8px;
+  border: none;
+}
+
+button.button-right:hover{
+  background-color: rgb(102, 111, 182);
+}
+
+
+input{
+  background-color: rgb(50, 54, 84);
+  border: none;
+  padding: 6px;
+  border-radius: 7px;
+}
+
+button.btn{
+  margin-top: 20px;
+  margin-left: 50px;
+  padding: 6px;
+  width: 150px;
+  background-color: rgb(50, 54, 84);
+  border-radius: 7px;
+  border:none;
+}
+button.btn:hover{
+  background-color: rgb(102, 111, 182);
+}
+.vanta-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+/* Dashboard */
+
+.header {
+  margin-top: -80px;
+  margin-bottom: 50px;
+  width: 450px;
+  padding: 15px 20px;
+  background-color: rgb(3, 3, 10);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 12px;
+}
+
+.header-title {
+  margin: 0;
+  font-size: 22px;
+}
+
+.exit-button {
+  background-color: rgb(50, 54, 84);
+  border: none;
+  padding: 8px 15px;
+  color: white;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.exit-button:hover {
+  background: rgb(102, 111, 182);
+}
+
+div.box{
+  background-color: rgb(3, 3, 10);
+  width: 500px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+  place-content: center;
+  border-radius: 12px;
+  border: 3px  rgb(109, 109, 224);
+  animation:glow 2s infinite alternate
+}
+@keyframes glow {
+  from {
+    box-shadow: 0 0 30px rgba(rgb(51, 0, 255), rgb(135, 7, 103), rgb(112, 101, 210), alpha);
+  }
+  to {
+    box-shadow: 0 0 60px rgba(109, 109, 224, 1);
+}
+}
+input.totranslate{
+  background-color: rgb(50, 54, 84);
+  width: 400px;
+  height: 100px;
+  margin-top: -10px;
+
+}
+
+
+input.translated{
+  background-color: rgb(50, 54, 84);
+  width: 400px;
+  height: 100px;
+  margin-top: 50px;
+  align-items: vertical;
+}
+
+button.active{
+  margin-right: 10px;
+}
+div.selectlanguage button{
+  margin-top: 30px;
+  width: 140px;
+  padding: 6px;
+  border-radius: 10px;
+  background-color: rgb(50, 54, 84);
+  border: none;
+}
+.selectlanguage button:hover{
+  background-color: rgb(102, 111, 182);
+}
+
+dashboard.body{
+  width: 100vw;
+  height: 100vh;
+}
